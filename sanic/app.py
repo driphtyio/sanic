@@ -925,7 +925,7 @@ class Sanic(
             return
         if blueprint.name in self.blueprints:
             if self.blueprints[blueprint.name] is not blueprint:
-                raise ValueError(
+                raise KeyError(
                     f"A blueprint with the name '{blueprint.name}' is "
                     "already registered. Blueprint names must be unique."
                 )
