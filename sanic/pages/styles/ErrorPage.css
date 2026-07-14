@@ -3,11 +3,10 @@
     max-width: 30em;
     margin: 5em auto 5em auto;
     text-align: justify;
-    /*text-justify: both;*/
 }
 
 #enduser a {
-    color: var(--sanic-blue);
+    color: var(--sanic-link);
 }
 
 #enduser p:last-child {
@@ -20,48 +19,24 @@ summary {
     cursor: pointer;
 }
 
-.tracerite {
-    --tracerite-var: var(--sanic-tracerite-var);
-    --tracerite-val: var(--sanic-tracerite-val);
-    --tracerite-type: var(--sanic-tracerite-type);
+/* TraceRite theme overrides */
+#sanic .tracerite {
+    --tracerite-var: var(--sanic-text);
+    --tracerite-val: var(--sanic);
+    --tracerite-type: #6d6a6b;
     --tracerite-exception: var(--sanic);
     --tracerite-highlight: var(--sanic-yellow);
-    --tracerite-tab: var(--sanic-tab-background);
-    --tracerite-tab-text: var(--sanic-tab-text);
+    --tracerite-highlight-text: var(--sanic-text);
+    --tracerite-caret: var(--sanic);
+    --tracerite-function: var(--sanic-link);
+    --tracerite-location: var(--sanic-text-lighter);
+    --tracerite-lineno: var(--sanic-text-lighter);
 }
 
-.tracerite>h3 {
-    margin: 0.5rem 0 !important;
-}
-
-#sanic .tracerite .traceback-labels button {
-    font-size: 0.8rem;
-    line-height: 120%;
-    background: var(--tracerite-tab);
-    color: var(--tracerite-tab-text);
-    transition: 0.3s;
-    cursor: pointer;
-}
-
-.tracerite .traceback-labels {
-    padding-top: 5px;
-}
-
-.tracerite .traceback-labels button:hover {
-    filter: contrast(150%) brightness(120%) drop-shadow(0 -0 2px var(--sanic-tab-shadow));
-}
-
-#sanic .tracerite .tracerite-tooltip::before {
-    bottom: 1.75em;
-}
-
-#sanic .tracerite .traceback-details mark span {
-    background: var(--sanic-highlight-background);
-    color: var(--sanic-highlight-text);
-}
-
-header {
-    background: var(--sanic-header-background);
+@media (prefers-color-scheme: dark) {
+    #sanic .tracerite {
+        --tracerite-type: #a8a3a5;
+    }
 }
 
 h2 {
