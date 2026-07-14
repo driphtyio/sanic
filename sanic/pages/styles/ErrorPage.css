@@ -19,26 +19,6 @@ summary {
     cursor: pointer;
 }
 
-/* TraceRite theme overrides */
-#sanic .tracerite {
-    --tracerite-var: var(--sanic-text);
-    --tracerite-val: var(--sanic);
-    --tracerite-type: #6d6a6b;
-    --tracerite-exception: var(--sanic);
-    --tracerite-highlight: var(--sanic-yellow);
-    --tracerite-highlight-text: var(--sanic-text);
-    --tracerite-caret: var(--sanic);
-    --tracerite-function: var(--sanic-link);
-    --tracerite-location: var(--sanic-text-lighter);
-    --tracerite-lineno: var(--sanic-text-lighter);
-}
-
-@media (prefers-color-scheme: dark) {
-    #sanic .tracerite {
-        --tracerite-type: #a8a3a5;
-    }
-}
-
 h2 {
     font-size: 1.3rem;
     color: var(--sanic-text);
