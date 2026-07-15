@@ -5,9 +5,10 @@
     --tracerite-type: #6d6a6b;
     --tracerite-exception: var(--sanic);
     --tracerite-highlight: var(--sanic-yellow);
-    --tracerite-highlight-text: var(--sanic-text);
+    --tracerite-highlight-text: var(--sanic-highlight-text);
+    --tracerite-call-symbol-color: var(--sanic-yellow);
+    --tracerite-call-highlight: var(--sanic-yellow);
     --tracerite-caret: var(--sanic);
-    --tracerite-function: var(--sanic-link);
     --tracerite-location: var(--sanic-text-lighter);
     --tracerite-lineno: var(--sanic-text-lighter);
 }
