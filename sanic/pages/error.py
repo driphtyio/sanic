@@ -2,7 +2,7 @@ from collections.abc import Mapping
 from pathlib import Path
 from typing import Any
 
-from html5tagger import E, HTML
+from html5tagger import HTML, E
 from tracerite import html_traceback, inspector
 from tracerite.html import javascript, style
 
