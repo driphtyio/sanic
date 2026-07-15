@@ -51,11 +51,10 @@ def worker_serve(
     config: bytes | str | dict[str, Any] | Any | None = None,
     passthru: dict[str, Any] | None = None,
 ):
-    tracerite.load()
-
     try:
         from sanic import Sanic
 
+        tracerite.load()
         if app_loader:
             app = app_loader.load()
         else:
